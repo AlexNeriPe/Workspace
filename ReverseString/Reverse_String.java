@@ -15,11 +15,11 @@ public class Reverse_String {
     }
 
     private static String reverse(String s){
-        char[] characters = new char[s.length()];       //Create an array with the size of the string
+        char[] characters = new char[s.length()];       //create an array with the size of the string
         int j = 0;
-        for(int i = s.length() - 1 ; i >= 0 ; i--){
-            characters[j++] = s.charAt(i);
+        for(int i = s.length() - 1 ; i >= 0 ; i--){     //for inverse
+            characters[j++] = s.charAt(i);              //assign the characters invert
         }
-        return new String(characters);
+        return new String(characters);                  //creating new object string from the string array
     }
 }
